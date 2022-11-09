@@ -1,0 +1,15 @@
+#lang scheme
+
+(define (inverso lista n)
+          (let inv ((i 0) (list1 '()) (EvaluarList lista))
+            (if not(=(car lista) i)
+                (list1 (cons i list1))
+                )
+            (if (>= i n)
+                list1
+                (inv (+ i 1) (list1) (list (cdr EvaluarList)) )
+            )
+       )
+ )
+
+(inverso  '(1 2 3) 10)
